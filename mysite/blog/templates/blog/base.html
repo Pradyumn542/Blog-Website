@@ -29,11 +29,11 @@
 
           <li><a class="navbar-brand bigbrand" href="{% url 'post_list' %}">My Posts</a></li>
           <li><a class="nav-link" href="{% url 'about' %}">About</a></li>
-          <li><a class="nav-link" href="https://www.github.com">Github</a></li>
-          <li><a class="nav-link" href="https://www.linkedin.com">LinkedIn</a></li>
+          <li><a class="nav-link" href="https://www.github.com/Pradyumn542">Github</a></li>
+          <li><a class="nav-link" href="https://www.linkedin.com/in/pradyumn-pandey-3523471ab">LinkedIn</a></li>
 
     </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right" "l1">
       {% if user.is_authenticated %}
       <li>
         <a href="{% url 'post_new' %}"> New Post  &nbsp;</a>
@@ -45,7 +45,7 @@
         <a href="{% url 'logout' %}">Log Out </a>
       </li>
       {% else %}
-      <li><a class=" btn btn-primary " href="{% url 'login' %}"><span class="glyphicon glyphicon-user" ></span> Login</a></li>
+      <li><a class=" btn btn-primary " href="{% url 'login' %}"><span class="glyphicon glyphicon-user"  ></span>Login </a></li>
       {% endif %}
 
     </ul>
